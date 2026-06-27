@@ -1,0 +1,62 @@
+<!--
+  ONE RUPEE MEDIA — components/footer.html
+  Reusable footer component (reference / static snapshot).
+
+  In the live SPA, the footer is rendered dynamically by renderFooter()
+  in global.js and injected into #root after each page render.
+  Auth pages (login, register) suppress the footer entirely.
+
+  This file documents the footer's markup for static reference.
+-->
+<footer>
+  <div class="footer-grid">
+    <!-- Brand column (spans 2 columns on wide viewports) -->
+    <div class="footer-col-span" style="grid-column: span 2;">
+      <button class="font-black" style="font-size:20px;margin-bottom:16px;display:block;" data-goto="home">
+        ONE RUPEE
+      </button>
+      <p class="text-muted" style="font-size:14px;line-height:1.6;">Four divisions. One vision. Pokhara, Nepal.</p>
+    </div>
+
+    <!-- Divisions column -->
+    <div>
+      <div class="footer-col-title">Divisions</div>
+      <div class="footer-links">
+        <button data-goto="media">Media</button>
+        <button data-goto="podcast">Podcast</button>
+        <button data-goto="production">Production</button>
+        <button data-goto="social">Social</button>
+      </div>
+    </div>
+
+    <!-- Company column -->
+    <div>
+      <div class="footer-col-title">Company</div>
+      <div class="footer-links">
+        <button data-goto="about">About</button>
+        <button data-goto="contact">Contact</button>
+      </div>
+    </div>
+
+    <!-- Account column -->
+    <div>
+      <div class="footer-col-title">Account</div>
+      <div class="footer-links">
+        <button data-goto="login">Login</button>
+        <button data-goto="register">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer-bottom">
+    <span class="font-mono text-muted" style="font-size:12px;">© 2026 One Rupee. All rights reserved.</span>
+    <div class="footer-social">
+      <a aria-label="Instagram" data-icon="instagram" href="https://instagram.com" target="_blank" rel="noreferrer"></a>
+      <a aria-label="Twitter/X" data-icon="twitter" href="https://twitter.com" target="_blank" rel="noreferrer"></a>
+      <a aria-label="LinkedIn" data-icon="linkedin" href="https://linkedin.com" target="_blank" rel="noreferrer"></a>
+      <a aria-label="YouTube" data-icon="youtube" href="https://youtube.com" target="_blank" rel="noreferrer"></a>
+    </div>
+  </div>
+</footer>

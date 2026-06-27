@@ -1,0 +1,56 @@
+<!--
+  ONE RUPEE MEDIA — components/navbar.html
+  Reusable navigation bar component.
+  
+  This markup is embedded in every page HTML file inside <header class="nav">.
+  It is managed by updateNav() in global.js, which:
+    - Marks the active link based on state.page
+    - Toggles the mobile menu open/closed
+    - Swaps the burger icon between ☰ and ✕
+-->
+<header class="nav">
+  <div class="nav-inner">
+    <!-- Logo / home link -->
+    <button class="nav-logo" data-goto="home">ONE RUPEE</button>
+
+    <!-- Desktop nav links -->
+    <nav class="nav-links" aria-label="Main navigation">
+      <button class="nav-link" data-goto="media">Media</button>
+      <button class="nav-link" data-goto="podcast">Podcast</button>
+      <button class="nav-link" data-goto="production">Production</button>
+      <button class="nav-link" data-goto="social">Social</button>
+      <button class="nav-link" data-goto="about">About</button>
+      <button class="nav-link" data-goto="contact">Contact</button>
+    </nav>
+
+    <!-- Desktop CTA buttons -->
+    <div class="nav-actions">
+      <button class="btn-outline" data-goto="login">Login</button>
+      <button class="btn-solid"   data-goto="register">Join</button>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-burger" id="burgerBtn" aria-label="Toggle mobile menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="6"  x2="20" y2="6"></line>
+        <line x1="4" y1="18" x2="20" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile dropdown menu -->
+  <div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <button class="nav-link" data-goto="media">Media</button>
+    <button class="nav-link" data-goto="podcast">Podcast</button>
+    <button class="nav-link" data-goto="production">Production</button>
+    <button class="nav-link" data-goto="social">Social</button>
+    <button class="nav-link" data-goto="about">About</button>
+    <button class="nav-link" data-goto="contact">Contact</button>
+    <div class="nav-mobile-actions">
+      <button class="btn-outline" data-goto="login">Login</button>
+      <button class="btn-solid"   data-goto="register">Join</button>
+    </div>
+  </div>
+</header>
